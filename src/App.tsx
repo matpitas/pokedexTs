@@ -3,9 +3,6 @@ import Navbar from '@/components/Navbar/Navbar'
 import CardPokemon from '@/components/CardPokemon/CardPokemon'
 
 import axios from 'axios'
-import { SelectTrigger, Select, SelectContent, SelectItem, SelectValue, SelectGroup } from "./components/ui/select"
-import { SelectLabel, Value } from "@radix-ui/react-select"
-import { Input } from "./components/ui/input"
 
 type Pokemon = {
   nomePokemon: string,
@@ -15,7 +12,6 @@ type Pokemon = {
 function App() {
 
   const [ pokemonObject, setPokemonObject ] = useState<Pokemon>()
-  const [ defaultPokemon , setDefaultPokemon ] = useState()
 
   useEffect(() => {
       const FetchingData = async () => {
