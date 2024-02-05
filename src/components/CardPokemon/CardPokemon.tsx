@@ -1,6 +1,6 @@
 type CardPokemonProps = {
-  imagePokemon: string,
-  namePokemon: string
+  imagePokemon?: string,
+  namePokemon?: string
 }
 
 const CardPokemon = ({imagePokemon, namePokemon}:CardPokemonProps) => {
